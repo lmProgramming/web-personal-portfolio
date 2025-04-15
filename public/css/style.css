@@ -1,0 +1,240 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #131313;
+  color: #CABCA4;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-btn {
+  background-color: #121212;
+  color: #00ff90;
+  border: 2px dashed #00ff90;
+  padding: 10px 20px;
+  border-radius: 0;
+  font-family: 'Courier New', monospace;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.projects-btn:hover {
+  background-color: #00ff90;
+  color: #121212;
+  border-color: #00ff90;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #000000;
+  text-align: center;
+}
+
+.navbar .nav-link {
+  color: #CABCA4;
+}
+
+.navbar .nav-link:hover {
+  color: #e0dbd1;
+}
+
+.navbar-brand {
+  color: #CABCA4;
+}
+
+.navbar-brand:hover {
+  color: #e0dbd1;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.main {
+  padding: 20px;
+  background: #CABCA4;
+  margin-top: 20px;
+}
+
+.page-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-footer {
+  background-color: #000000;
+  color: #CABCA4;
+  text-align: center;
+  padding: 5px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.game-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.tool-img img {
+  display: inline-block;
+}
+
+.tool-img img:not([src]):not([srcset]),
+.tool-img img[src=""],
+.tool-img img[src="broken-link"] {
+  display: none;
+  alt: "Image not available";
+}
+
+a {
+  text-decoration: underline;
+}
+
+a {
+  color: #00ff90;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.gallery-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.gallery {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item {
+  flex: 0 0 50%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-item .project-image {
+  display: block;
+  max-width: 120px;
+  height: 120px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  object-fit: cover;
+  border-radius: 20%;
+}
+
+.gallery-item .project-info {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.gallery-item a {
+  display: block;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #00ff90;
+  text-decoration: none;
+  margin-bottom: 8px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.gallery-item a:hover {
+  text-decoration: underline;
+}
+
+.project-description {
+  font-size: 0.9em;
+  color: #CABCA4;
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.4;
+}
+
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 1;
+  transition: background-color 0.2s ease;
+}
+
+.gallery-arrow:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.gallery-arrow:not(:disabled):hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.left-arrow {
+  left: 5px;
+}
+
+.right-arrow {
+  right: 5px;
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    flex: 0 0 100%;
+    padding: 15px 10px;
+  }
+
+  .gallery-container {
+    padding: 0 35px;
+  }
+
+  .gallery-arrow {
+    padding: 8px 10px;
+    font-size: 16px;
+  }
+
+  .left-arrow {
+    left: 3px;
+  }
+
+  .right-arrow {
+    right: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+}
