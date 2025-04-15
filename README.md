@@ -1,6 +1,6 @@
-# web app
+# Personal Portfolio Web Application
 
-simple personal portfolio site
+My personal portfolio
 
 ## Setup and Development
 
